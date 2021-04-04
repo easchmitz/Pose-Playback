@@ -13,6 +13,14 @@
 		070CE4682617E3B40044F8AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070CE4662617E3B40044F8AF /* Main.storyboard */; };
 		070CE46A2617E3B60044F8AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070CE4692617E3B60044F8AF /* Assets.xcassets */; };
 		070CE46D2617E3B60044F8AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070CE46B2617E3B60044F8AF /* LaunchScreen.storyboard */; };
+		070CE47A2617F1260044F8AF /* models.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070CE4792617F1260044F8AF /* models.xcassets */; };
+		070CE4852617FAD70044F8AF /* robot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 070CE4842617FAD70044F8AF /* robot.usdz */; };
+		070CE48B2618DC650044F8AF /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 070CE48A2618DC650044F8AF /* art.scnassets */; };
+		070CE4902618E7DE0044F8AF /* schmitze.json in Resources */ = {isa = PBXBuildFile; fileRef = 070CE48F2618E7DE0044F8AF /* schmitze.json */; };
+		070CE4962618E8C30044F8AF /* ARMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070CE4932618E8C30044F8AF /* ARMetaData.swift */; };
+		070CE4972618E8C30044F8AF /* ARJointPositionDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070CE4942618E8C30044F8AF /* ARJointPositionDataModel.swift */; };
+		070CE4982618E8C30044F8AF /* ARFrameDataPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070CE4952618E8C30044F8AF /* ARFrameDataPayload.swift */; };
+		070CE49B261905F10044F8AF /* ARWrapperDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070CE49A261905F10044F8AF /* ARWrapperDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		070CE4692617E3B60044F8AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		070CE46C2617E3B60044F8AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		070CE46E2617E3B60044F8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		070CE4792617F1260044F8AF /* models.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = models.xcassets; sourceTree = "<group>"; };
+		070CE4842617FAD70044F8AF /* robot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = robot.usdz; sourceTree = "<group>"; };
+		070CE48A2618DC650044F8AF /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		070CE48F2618E7DE0044F8AF /* schmitze.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schmitze.json; sourceTree = "<group>"; };
+		070CE4932618E8C30044F8AF /* ARMetaData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARMetaData.swift; sourceTree = "<group>"; };
+		070CE4942618E8C30044F8AF /* ARJointPositionDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARJointPositionDataModel.swift; sourceTree = "<group>"; };
+		070CE4952618E8C30044F8AF /* ARFrameDataPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARFrameDataPayload.swift; sourceTree = "<group>"; };
+		070CE49A261905F10044F8AF /* ARWrapperDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARWrapperDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,8 @@
 		070CE45F2617E3B40044F8AF /* Pose Playback */ = {
 			isa = PBXGroup;
 			children = (
+				070CE4922618E7EC0044F8AF /* DataModels */,
+				070CE48E2618E7AC0044F8AF /* Data */,
 				070CE4602617E3B40044F8AF /* AppDelegate.swift */,
 				070CE4622617E3B40044F8AF /* SceneDelegate.swift */,
 				070CE4642617E3B40044F8AF /* ViewController.swift */,
@@ -63,8 +81,30 @@
 				070CE4692617E3B60044F8AF /* Assets.xcassets */,
 				070CE46B2617E3B60044F8AF /* LaunchScreen.storyboard */,
 				070CE46E2617E3B60044F8AF /* Info.plist */,
+				070CE4792617F1260044F8AF /* models.xcassets */,
+				070CE4842617FAD70044F8AF /* robot.usdz */,
+				070CE48A2618DC650044F8AF /* art.scnassets */,
 			);
 			path = "Pose Playback";
+			sourceTree = "<group>";
+		};
+		070CE48E2618E7AC0044F8AF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				070CE48F2618E7DE0044F8AF /* schmitze.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		070CE4922618E7EC0044F8AF /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				070CE4952618E8C30044F8AF /* ARFrameDataPayload.swift */,
+				070CE4942618E8C30044F8AF /* ARJointPositionDataModel.swift */,
+				070CE4932618E8C30044F8AF /* ARMetaData.swift */,
+				070CE49A261905F10044F8AF /* ARWrapperDataModel.swift */,
+			);
+			path = DataModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +165,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				070CE46D2617E3B60044F8AF /* LaunchScreen.storyboard in Resources */,
+				070CE4852617FAD70044F8AF /* robot.usdz in Resources */,
+				070CE4902618E7DE0044F8AF /* schmitze.json in Resources */,
 				070CE46A2617E3B60044F8AF /* Assets.xcassets in Resources */,
+				070CE48B2618DC650044F8AF /* art.scnassets in Resources */,
+				070CE47A2617F1260044F8AF /* models.xcassets in Resources */,
 				070CE4682617E3B40044F8AF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +183,11 @@
 			files = (
 				070CE4652617E3B40044F8AF /* ViewController.swift in Sources */,
 				070CE4612617E3B40044F8AF /* AppDelegate.swift in Sources */,
+				070CE4972618E8C30044F8AF /* ARJointPositionDataModel.swift in Sources */,
+				070CE49B261905F10044F8AF /* ARWrapperDataModel.swift in Sources */,
 				070CE4632617E3B40044F8AF /* SceneDelegate.swift in Sources */,
+				070CE4962618E8C30044F8AF /* ARMetaData.swift in Sources */,
+				070CE4982618E8C30044F8AF /* ARFrameDataPayload.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
