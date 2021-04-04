@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         // load the data
-        dataModel = loadData()
+        dataModel = loadJsonData(named: "data")
         
         scnView.delegate = self
     
@@ -93,14 +93,14 @@ class ViewController: UIViewController {
     }
     
     /// Loads the saved JSON data into our data model
-    private func loadData() -> ARJointPositionDataModel? {
+    private func loadJsonData(named fileName: String) -> ARJointPositionDataModel? {
         let decoder = JSONDecoder()
         guard
-            let url = Bundle.main.url(forResource: "schmitze", withExtension: "json"),
+            let url = Bundle.main.url(forResource: fileName, withExtension: "json"),
             let json = try? Data(contentsOf: url),
             let data = try? decoder.decode([ARWrapperDataModel].self, from: json)
         else {
-            return nil
+            fatalError()
         }
         let retval = data[0].data
         frameCount = retval.frames.count
@@ -113,7 +113,7 @@ class ViewController: UIViewController {
         guard
             let frame = dataModel?.frames[currentFrame].jointData,
             let anchor = dataModel?.frames[currentFrame].anchor,
-            let camera = dataModel?.frames[currentFrame].camera
+            let _ = dataModel?.frames[currentFrame].camera
         else {
             print("some data is nil")
             return
