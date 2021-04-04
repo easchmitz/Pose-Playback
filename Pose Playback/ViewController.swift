@@ -25,8 +25,6 @@ class ViewController: UIViewController {
     
     private var frameCount: Int = 0
     
-    private var isEvenFrame: Bool = true
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -166,13 +164,10 @@ class ViewController: UIViewController {
 extension ViewController : SCNSceneRendererDelegate {
     
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
-        isEvenFrame = !isEvenFrame
         
-        if isEvenFrame {
-            applyTransforms()
-            currentFrame += 1
-            if(currentFrame >= frameCount) { currentFrame = 0 }
-        }
+        applyTransforms()
+        currentFrame += 1
+        if(currentFrame >= frameCount) { currentFrame = 0 }
         
     }
     
