@@ -13,7 +13,6 @@
 		070CE4682617E3B40044F8AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070CE4662617E3B40044F8AF /* Main.storyboard */; };
 		070CE46A2617E3B60044F8AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070CE4692617E3B60044F8AF /* Assets.xcassets */; };
 		070CE46D2617E3B60044F8AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070CE46B2617E3B60044F8AF /* LaunchScreen.storyboard */; };
-		070CE47A2617F1260044F8AF /* models.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070CE4792617F1260044F8AF /* models.xcassets */; };
 		070CE4852617FAD70044F8AF /* robot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 070CE4842617FAD70044F8AF /* robot.usdz */; };
 		070CE48B2618DC650044F8AF /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 070CE48A2618DC650044F8AF /* art.scnassets */; };
 		070CE4902618E7DE0044F8AF /* schmitze.json in Resources */ = {isa = PBXBuildFile; fileRef = 070CE48F2618E7DE0044F8AF /* schmitze.json */; };
@@ -32,7 +31,6 @@
 		070CE4692617E3B60044F8AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		070CE46C2617E3B60044F8AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		070CE46E2617E3B60044F8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		070CE4792617F1260044F8AF /* models.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = models.xcassets; sourceTree = "<group>"; };
 		070CE4842617FAD70044F8AF /* robot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = robot.usdz; sourceTree = "<group>"; };
 		070CE48A2618DC650044F8AF /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		070CE48F2618E7DE0044F8AF /* schmitze.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schmitze.json; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 				070CE4692617E3B60044F8AF /* Assets.xcassets */,
 				070CE46B2617E3B60044F8AF /* LaunchScreen.storyboard */,
 				070CE46E2617E3B60044F8AF /* Info.plist */,
-				070CE4792617F1260044F8AF /* models.xcassets */,
 				070CE4842617FAD70044F8AF /* robot.usdz */,
 				070CE48A2618DC650044F8AF /* art.scnassets */,
 			);
@@ -171,7 +168,6 @@
 				070CE4902618E7DE0044F8AF /* schmitze.json in Resources */,
 				070CE46A2617E3B60044F8AF /* Assets.xcassets in Resources */,
 				070CE48B2618DC650044F8AF /* art.scnassets in Resources */,
-				070CE47A2617F1260044F8AF /* models.xcassets in Resources */,
 				070CE4682617E3B40044F8AF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
