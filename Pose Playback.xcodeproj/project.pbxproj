@@ -40,6 +40,7 @@
 		070CE4942618E8C30044F8AF /* ARJointPositionDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARJointPositionDataModel.swift; sourceTree = "<group>"; };
 		070CE4952618E8C30044F8AF /* ARFrameDataPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARFrameDataPayload.swift; sourceTree = "<group>"; };
 		070CE49A261905F10044F8AF /* ARWrapperDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARWrapperDataModel.swift; sourceTree = "<group>"; };
+		070CE49D261A46490044F8AF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 		070CE4542617E3B30044F8AF = {
 			isa = PBXGroup;
 			children = (
+				070CE49D261A46490044F8AF /* README.md */,
 				070CE45F2617E3B40044F8AF /* Pose Playback */,
 				070CE45E2617E3B40044F8AF /* Products */,
 			);
