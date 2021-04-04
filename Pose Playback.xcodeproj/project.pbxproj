@@ -20,6 +20,7 @@
 		070CE4972618E8C30044F8AF /* ARJointPositionDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070CE4942618E8C30044F8AF /* ARJointPositionDataModel.swift */; };
 		070CE4982618E8C30044F8AF /* ARFrameDataPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070CE4952618E8C30044F8AF /* ARFrameDataPayload.swift */; };
 		070CE49B261905F10044F8AF /* ARWrapperDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070CE49A261905F10044F8AF /* ARWrapperDataModel.swift */; };
+		8DEE4B28261A84990078F201 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEE4B27261A84990078F201 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		070CE4952618E8C30044F8AF /* ARFrameDataPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARFrameDataPayload.swift; sourceTree = "<group>"; };
 		070CE49A261905F10044F8AF /* ARWrapperDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARWrapperDataModel.swift; sourceTree = "<group>"; };
 		070CE49D261A46490044F8AF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8DEE4B27261A84990078F201 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				070CE46E2617E3B60044F8AF /* Info.plist */,
 				070CE4842617FAD70044F8AF /* robot.usdz */,
 				070CE48A2618DC650044F8AF /* art.scnassets */,
+				8DEE4B27261A84990078F201 /* Extensions.swift */,
 			);
 			path = "Pose Playback";
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				070CE4652617E3B40044F8AF /* ViewController.swift in Sources */,
 				070CE4612617E3B40044F8AF /* AppDelegate.swift in Sources */,
 				070CE4972618E8C30044F8AF /* ARJointPositionDataModel.swift in Sources */,
+				8DEE4B28261A84990078F201 /* Extensions.swift in Sources */,
 				070CE49B261905F10044F8AF /* ARWrapperDataModel.swift in Sources */,
 				070CE4632617E3B40044F8AF /* SceneDelegate.swift in Sources */,
 				070CE4962618E8C30044F8AF /* ARMetaData.swift in Sources */,

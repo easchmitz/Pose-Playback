@@ -118,7 +118,7 @@ class ViewController: UIViewController {
         }
         
         // The position of the ARBodyAnchor root joint in space
-        let anchorWorldMatrix = scnMatrixFromValues(anchor)
+        let anchorWorldMatrix = anchor.toSCNMatrix4()
     
         // apply the anchor transform to the robot
         robot.setWorldTransform(anchorWorldMatrix)
@@ -131,7 +131,7 @@ class ViewController: UIViewController {
             // check to see if the current node name is a joint we track
             if let jointIndex = dataModel!.meta.jointNames.firstIndex(of: node.name!) {
                 // values for this node exist, get the values array and convert to matrix
-                let m = matrixFromValues(frame[jointIndex])
+                let m = frame[jointIndex].toSimdFloat4x4()
                 // move our refNode according to the transform
                 // simdTransform: The transform applied to the node relative to its parent
                 // Here the refNode has only one parent, and the parent is at the root
@@ -141,23 +141,6 @@ class ViewController: UIViewController {
             }
             
         }
-    }
-    
-    /// Converts the array of floats to a SCNMatrix4 matrix
-    private func scnMatrixFromValues(_ v: [Float]) -> SCNMatrix4 {
-        let m = matrixFromValues(v)
-        let matrix = SCNMatrix4(m)
-        return matrix
-    }
-    
-    /// Converts the array of floats to a simd_float4x4 matrix
-    private func matrixFromValues(_ v: [Float]) -> simd_float4x4 {
-        let c0 = SIMD4(v[0], v[1], v[2], v[3])
-        let c1 = SIMD4(v[4], v[5], v[6], v[7])
-        let c2 = SIMD4(v[8], v[9], v[10], v[11])
-        let c3 = SIMD4(v[12], v[13], v[14], v[15])
-        let matrix = simd_float4x4([c0, c1, c2, c3])
-        return matrix
     }
 }
 
