@@ -7,9 +7,9 @@
 import Foundation
 import SceneKit
 
-/// Converts array of 16 Floats to a simd_float4x4 matrix
 extension Array where Element == Float {
     
+    /// Converts array of 16 Floats to a simd_float4x4 matrix
     func toSimdFloat4x4() -> simd_float4x4 {
         if self.count == 16 {
             let c0 = SIMD4(self[0], self[1], self[2], self[3])
